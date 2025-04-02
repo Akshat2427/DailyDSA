@@ -14,7 +14,7 @@ function Home(props: Props) {
     
     if (emailRegex.test(email)) {
       setIsSubscribed(true); 
-      try{const response = await fetch("http://localhost:8080/email/subscribe ", {
+      try{const response = await fetch(`${import.meta.env.VITE_BACKEND_URL}/email/subscribe `, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
