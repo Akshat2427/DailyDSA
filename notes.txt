@@ -1,0 +1,4 @@
+cd backend
+docker build -t akshatvashisht24/backend-app .
+docker tag akshatvashisht24/backend-app akshatvashisht24/backend-app:latest
+docker push akshatvashisht24/backend-app:latest
